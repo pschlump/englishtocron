@@ -9,6 +9,8 @@ This project is inspired by the library `natural-cron`, which converts natural l
 - Use complex patterns to recognize common time scheduling like time ranges.
 - Support both AM/PM and 24-hour time formats.
 
+
+
 ## Supported English Patterns
 
 | English Phrase | CronJob Syntax |
@@ -23,3 +25,22 @@ This project is inspired by the library `natural-cron`, which converts natural l
 | midnight on Tuesdays | 0 0 ? * TUE * |
 
 
+## Examples of how to use
+
+```
+// ...
+import "github.com/pschlump/englishtocron"
+// ...
+
+func main() {
+
+    cron, err := englishtocron.New("every day at 4:00 pm")
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error parsing '%s': %v\n", text, err)
+        continue
+    }
+    fmt.Printf("%s: %s\n", text, cron)
+
+}
+
+```
