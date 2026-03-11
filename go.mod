@@ -1,3 +1,3 @@
-module git.q8s.co/pschlump/english-to-cron
+module github.com/pschlump/englishtocron
 
-go 1.22
+go 1.24.0

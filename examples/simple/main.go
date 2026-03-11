@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	englishtocron "git.q8s.co/pschlump/english-to-cron"
+	"github.com/pschlump/englishtocron"
 )
 
 func main() {
